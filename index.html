@@ -1,0 +1,483 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+          <title>Johan</title>
+          <link rel="stylesheet" href="./style.css">
+          <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+ 
+    </head>
+    <body>
+      <!-- homepage section -->
+      <section class="navbar py-4 shadow-md  bg-gray">
+        <nav>
+                  <!-- component -->
+        <div class="w-full text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+          <div x-data="{ open: false }" class="flex flex-col    px-4 mx-auto    md:px-6 lg:px-12 md:ml-20 md:mr-24 md:items-center md:justify-between md:flex-row ">
+            <div class="pt-2 flex flex-row items-center justify-between">
+              <a href="#" class="flex focus:outline-none">
+                <svg class="mt-1 ml-2 md:ml-0" width="20px" height="18.8px" viewBox="0 0 18 17" fill="#2680FF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.4426 14.8203H2.77734C1.82746 14.8203 1.05469 14.0476 1.05469 13.0977C1.05469 12.1478 1.82746 11.375 2.77734 11.375H6.15234C7.68378 11.375 8.92969 10.1291 8.92969 8.59767C8.92969 7.06623 7.68378 5.82033 6.15234 5.82033H4.30741C4.34127 5.99098 4.35937 6.16721 4.35937 6.34767C4.35937 6.52813 4.34127 6.70437 4.30741 6.87502H6.15234C7.10223 6.87502 7.875 7.64778 7.875 8.59767C7.875 9.54756 7.10223 10.3203 6.15234 10.3203H2.77734C1.2459 10.3203 0 11.5662 0 13.0977C0 14.6291 1.2459 15.875 2.77734 15.875H11.4426C11.4087 15.7044 11.3906 15.5281 11.3906 15.3477C11.3906 15.1672 11.4087 14.991 11.4426 14.8203Z" fill="#2680FF"/>
+                    <path d="M14.0976 13.6953C13.1865 13.6953 12.4453 14.4366 12.4453 15.3477C12.4453 16.2588 13.1865 17 14.0976 17C15.0087 17 15.75 16.2588 15.75 15.3477C15.75 14.4366 15.0087 13.6953 14.0976 13.6953Z" fill="#2680FF"/>
+                    <path d="M5.02734 0.195328H1.65234C1.36111 0.195328 1.125 0.431437 1.125 0.722671C1.125 1.15822 1.125 4.34162 1.125 4.78213C0.471797 5.00277 0 5.62096 0 6.34767C0 7.25878 0.741234 8.00001 1.65234 8.00001C2.56345 8.00001 3.30469 7.25878 3.30469 6.34767C3.30469 5.62096 2.83289 5.00277 2.17969 4.78213V3.50002H5.02734C5.31858 3.50002 5.55469 3.26391 5.55469 2.97267V0.722671C5.55469 0.431437 5.31858 0.195328 5.02734 0.195328Z" fill="#2680FF"/>
+                    <path d="M14.0977 1.32033C11.9459 1.32033 10.1953 3.0709 10.1953 5.22267C10.1953 6.38462 10.7015 7.46719 11.5884 8.21148L13.6278 12.2122C13.8232 12.5953 14.3722 12.5953 14.5675 12.2122L16.6069 8.21148C17.4938 7.46719 18 6.38462 18 5.22267C18 3.0709 16.2494 1.32033 14.0977 1.32033ZM14.0977 6.87501C13.1865 6.87501 12.4453 6.13378 12.4453 5.22267C12.4453 4.31156 13.1865 3.57033 14.0977 3.57033C15.0088 3.57033 15.75 4.31156 15.75 5.22267C15.75 6.13378 15.0088 6.87501 14.0977 6.87501Z" fill="#2680FF"/>
+                    </svg>
+                <span class="text-xl blue-color pl-3 font-Gilroy font-bold">CIRCUITDAGEN</span>
+              </a>
+              <div>
+                <button class="md:hidden rounded-lg focus:outline-none mr-4">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M18.7678 17.6492L13.3648 12.2461C14.4114 10.9533 15.0415 9.31064 15.0415 7.5215C15.0415 3.37479 11.6674 0.000732422 7.52074 0.000732422C3.37403 0.000732422 0 3.37476 0 7.52147C0 11.6682 3.37406 15.0422 7.52077 15.0422C9.30991 15.0422 10.9526 14.4121 12.2454 13.3655L17.6485 18.7686C17.8028 18.923 18.0055 19.0005 18.2082 19.0005C18.4109 19.0005 18.6135 18.923 18.7679 18.7686C19.0774 18.4591 19.0774 17.9587 18.7678 17.6492ZM7.52077 13.4589C4.24646 13.4589 1.58333 10.7958 1.58333 7.52147C1.58333 4.24715 4.24646 1.58403 7.52077 1.58403C10.7951 1.58403 13.4582 4.24715 13.4582 7.52147C13.4582 10.7958 10.795 13.4589 7.52077 13.4589Z" fill="#1C4071"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="19" height="19" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  </button>
+                  <button class="mr-2 md:hidden rounded-lg focus:outline-none focus:shadow-outline hover:border-yellow-600" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                      <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                      <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                  </button>
+              </div>
+
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"  class=" flex-col flex-grow pb-4 md:pb-0 hidden lg:flex lg:justify-end lg:flex-row nav-absolute">
+              <a class="mt-5 md:mt-0 px-4 text-xl md:text-base blue-color pl-2 font-Gilroy font-semibold " href="#">Huis</a>
+              <a class="mt-5 md:mt-0 px-4 text-xl md:text-base blue-color pl-2 font-Gilroy font-semibold " href="#">Contact</a>
+              <a class="mt-5 md:mt-0 px-4 text-xl md:text-base blue-color pl-2 font-Gilroy font-semibold " href="#">Profiel</a>
+            </nav>
+       </div>
+        </div>
+   
+
+      </section>
+
+      <!--  part two -->
+      <section class="part-two" >
+        <div class="   px-4 mx-auto    md:px-6 lg:px-12 md:ml-20 md:mr-24 md:items-center md:justify-between  ">
+            <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-9  gap-4  mr-0 md:mr-4">
+                <div class="mt-3 col-span-1 md:col-span-2   ">
+                    <label class=" ">
+                        <select class="w-full px-2 rounded mt-1 text-base font-medium blue-color font-Gilroy cursor-pointer  h-12">
+                          <option class="">Circuit</option>
+                          <option class="">Circuit-2</option>
+                          <option class="">Circuit-3</option>
+                        </select>
+                      </label>
+                </div>
+                <div class="mt-4 col-span-1 md:col-span-2">
+                        <label class="">    
+                            <button class="w-full bg-white px-2 flex justify-between h-12 pt-2 rounded  focus:outline-none">
+                                <span class=" blue-color text-base   font-Gilroy cursor-pointer">Mannd</span>
+                           
+                                <svg class="mt-2" width="19" height="19" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.84747 7.0619H4.83645C4.35808 7.0619 3.97015 7.43247 3.97015 7.88944V8.85522C3.97015 9.31219 4.35808 9.68276 4.83645 9.68276H5.84747C6.32585 9.68276 6.71378 9.31219 6.71378 8.85522V7.88944C6.71378 7.43247 6.32618 7.0619 5.84747 7.0619Z" fill="#D2D9E3"/>
+                                    <path d="M9.67449 7.0619H8.66313C8.18476 7.0619 7.79683 7.43247 7.79683 7.88944V8.85522C7.79683 9.31219 8.18476 9.68276 8.66313 9.68276H9.67449C10.1529 9.68276 10.5408 9.31219 10.5408 8.85522V7.88944C10.5408 7.43247 10.1529 7.0619 9.67449 7.0619Z" fill="#D2D9E3"/>
+                                    <path d="M13.5008 7.0619H12.4898C12.0114 7.0619 11.6232 7.43247 11.6232 7.88944V8.85522C11.6232 9.31219 12.0111 9.68276 12.4898 9.68276H13.5008C13.9792 9.68276 14.3671 9.31219 14.3671 8.85522V7.88944C14.3671 7.43247 13.9792 7.0619 13.5008 7.0619Z" fill="#D2D9E3"/>
+                                    <path d="M5.84747 10.6824H4.83645C4.35808 10.6824 3.97015 11.053 3.97015 11.51V12.4754C3.97015 12.9327 4.35808 13.303 4.83645 13.303H5.84747C6.32585 13.303 6.71378 12.9327 6.71378 12.4754V11.51C6.71378 11.0533 6.32618 10.6824 5.84747 10.6824Z" fill="#D2D9E3"/>
+                                    <path d="M9.67449 10.6824H8.66313C8.18476 10.6824 7.79683 11.053 7.79683 11.51V12.4754C7.79683 12.9327 8.18476 13.303 8.66313 13.303H9.67449C10.1529 13.303 10.5408 12.9327 10.5408 12.4754V11.51C10.5408 11.0533 10.1529 10.6824 9.67449 10.6824Z" fill="#D2D9E3"/>
+                                    <path d="M13.5008 10.6824H12.4898C12.0114 10.6824 11.6232 11.053 11.6232 11.51V12.4754C11.6232 12.9327 12.0111 13.303 12.4898 13.303H13.5008C13.9792 13.303 14.3671 12.9327 14.3671 12.4754V11.51C14.3671 11.0533 13.9792 10.6824 13.5008 10.6824Z" fill="#D2D9E3"/>
+                                    <path d="M15.4937 2.11492C15.1544 2.11492 14.879 1.82692 14.879 1.47139V0.827537C14.879 0.370567 14.4914 0 14.0127 0H13.8204C13.3417 0 12.9541 0.370567 12.9541 0.827537C12.9541 0.827537 12.9541 1.11554 12.9541 1.47139C12.9541 1.82692 12.5039 2.11492 11.9491 2.11492H7.3831C6.82801 2.11492 6.37811 1.82692 6.37811 1.47139V0.827537C6.37811 0.370567 5.99019 0 5.51181 0H5.31952C4.84115 0 4.45322 0.370567 4.45322 0.827537C4.45322 0.827537 4.45322 1.11554 4.45322 1.47139C4.45322 1.82692 4.21135 2.11492 3.91321 2.11492H3.37353C2.89515 2.11492 2.41946 2.47589 2.31092 2.92102L0.21317 11.5298C0.104631 11.9753 0.224225 12.6489 0.479492 13.0358L1.97659 15.3001C2.23219 15.6864 2.82715 16 3.30552 16H16.1088C16.5871 16 16.9751 15.6294 16.9751 15.1725V2.94246C16.9751 2.48549 16.5871 2.11492 16.1088 2.11492C16.1088 2.11492 15.8334 2.11492 15.4937 2.11492ZM15.6294 13.8227C15.6294 14.2796 15.2414 14.6502 14.7627 14.6502H3.5752C3.09682 14.6502 2.70889 14.2796 2.70889 13.8227V6.54253C2.70889 6.08556 3.09682 5.71499 3.5752 5.71499H14.7631C15.2414 5.71499 15.6297 6.08556 15.6297 6.54253L15.6294 13.8227Z" fill="#D2D9E3"/>
+                                    </svg>
+                              </button>
+                        </label>
+                </div>
+                <div class="mt-4 col-span-1 md:col-span-2">
+                    <label class="">
+                        <select class="w-full py-3 px-2 rounded form-select text-base font-medium blue-color font-Gilroy cursor-pointer  h-12 focus:outline-none" >
+                          <option class="">Organisator</option>
+                          <option class="">Organisator-2</option>
+                          <option class="">Organisator-3</option>
+                        </select>
+                      </label>
+                </div>
+                <div class="mt-4 col-span-1 md:col-span-2">
+                    <label class="">
+                        <select class="w-full py-3 px-2 rounded form-select text-lg font-medium blue-color font-Gilroy cursor-pointer  h-12 focus:outline-none">
+                          <option class="">Voorkeuren</option>
+                          <option class="">Voorkeuren-2</option>
+                          <option class="">Voorkeuren-3</option>
+                        </select>
+                      </label>
+                </div>
+                <div class="md:col-span-1">
+                    <button class="w-full mt-4 blue-bg flex h-12 pt-2  rounded justify-center focus:outline-none">
+                        <svg class="mt-2 mr-1" width="16" height="17" viewBox="0 0 16 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.95959 0.0884094C12.4836 0.0884094 16 1.95971 16 3.58424C16 3.97495 15.7738 4.36566 15.3625 4.69468L10.201 10.288C10.016 10.5142 9.93371 10.8227 9.93371 11.1106V14.6269C9.93371 15.6963 9.07003 16.5599 8.00072 16.5599C6.93141 16.5599 6.06773 15.6963 6.06773 14.6269V11.1311C6.06773 10.8432 5.98548 10.5553 5.80041 10.3086L0.638917 4.71524C0.207079 4.36566 0.00144291 3.97495 0.00144291 3.6048C-0.0808125 1.95971 3.43558 0.0884094 7.95959 0.0884094ZM7.95959 5.7023C11.3937 5.7023 13.6763 4.63299 13.6763 3.64593C13.6763 2.65887 11.3937 1.58956 7.95959 1.58956C4.52546 1.58956 2.24289 2.65887 2.24289 3.64593C2.24289 4.63299 4.52546 5.7023 7.95959 5.7023Z" fill="white"/>
+                            </svg>
+                            <span class="text-white text-xl   font-Gilroy cursor-pointer">Filter</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+      </section>
+            <!--  part three -->
+      <section class="part-three" >
+        <div class="  px-4 mx-auto    md:px-6 lg:px-12 md:ml-20 md:mr-24 md:items-center md:justify-between">
+            <div class=" pb-10">
+                <div class=" py-6">
+                    <p class=" text-lg font-bold blue-color font-Gilroy ">Aankomende Evenementen</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 ">
+                    <div class="img-1 mt-4 ">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-2 mt-4  md:mr-2">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy ">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-3 mt-12 md:mt-4 ">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy ">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-4 mt-12 md:mt-4  md:ml-0">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-5 mt-4 hidden md:block">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-6 mt-4 hidden md:block">
+                        <div class="img-15 flex justify-end">                      
+                                <div class="img-17 ">
+                                    <img src="./assets/pics/Rectangle 14.png" class="mx-1" alt="">
+                                </div>      
+                        </div>
+                        <div class="img-16">
+                            <div class="flex justify-between text-white pt-12 mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">Monteblanco</p>
+                                </div>
+                                <div>
+                                  <p class="text-sm green-text font-Gilroy">€ 890</p>  
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-white mx-2">
+                                <div>
+                                    <p class="text-sm font-Gilroy">12 <span class=" gray-text" style="font-size: 11px;">MAA</span><span class=" gray-text" style="font-size: 11px;">-</span class=" gray-text" style="font-size: 11px;">13 <span class=" gray-text" style="font-size: 11px;">MAA</span></p>
+                                </div>
+                                <div> 
+                                    <svg class="mt-2" width="18" height="10" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H14.5M11.8966 7L15 4L11.8966 1" stroke="white"/>
+                                        </svg>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class=" pt-10 ">
+                    <p class=" text-lg font-bold blue-color font-Gilroy ">Alle evenementen</p>
+                </div>
+            </div>
+
+            <div class="table w-full mt-6 ">
+                <div class="grid grid-cols-6 tab">
+                  <p class="pl-3 text-left pb-4 graytext-2 font-semibold text-base font-Gilroy">Circuit</p>
+                  <p class="  pl-3 text-left pb-4 graytext-2 font-Gilroy font-semibold text-base">Datum</p>
+                  <p class="pl-3 text-left md:text-center pb-4 graytext-2 font-Gilroy font-semibold text-base">Vrij Rijden</p>
+                  <p class="p text-left pb-4 graytext-2 font-Gilroy font-semibold text-base">Originele uitlaat of dB-killer</p>
+                  <p class="pl-6 text-left md:text-center pb-4 graytext-2 font-Gilroy font-semibold text-base">Organisatie</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-6 white-bg rounded mr-0 md:mr-3">
+                    <p class="pl-3  text-md blue-color font-Gilroy font-semibold py-2">Monteblanco</p>
+                    <p class="flex  pl-3 text-base blue-color font-Gilroy font-semibold py-2"><span class=" gray-text mt-1 mr-2" style="font-size: 10px;">Wo</span>12<span class="mt-1 mx-2 gray-text" style="font-size: 10px;">MAA</span> 
+                      
+                      <svg class="mt-2" width="16" height="5" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1" d="M0.5 0.5L15.5 0.5" stroke="#1C4071"/>
+                          </svg>
+                  
+                      <span class="mt-1 gray-text mx-1" style="font-size: 10px;">Do</span>13<span class="pl-1 gray-text mt-1 mx-2" style="font-size:10px;">MAA</span> 3 <span class="ml-1 gray-text mt-1" style="font-size: 10px; ">dagen</span></p>
+                   
+                   
+                   
+                    <p class="flex pl-3 justify-start md:justify-center text-base blue-color font-Gilroy font-semibold py-2">
+                        <svg class="mt-2 mr-1" width="14" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 4L3.5 6.5L9 1" stroke="#2ECC71" stroke-width="2"/>
+                            </svg>  
+                        Vrij Rijden</p>
+                    <p class="pl-3 text-sm blue-color font-Gilroy font-semibold py-2" >
+                        Originele uitlaat of dB-killer
+                    </p>
+                    <p class="pl-3 mx-1 md:mx-auto">
+                        <img src="./assets/pics/race.png" class="pr-2 " style="width: 109px; height: 19px;">    
+                        <span class="flex  pl-4  text-sm mt-1 blue-color font-Gilroy font-medium">Circuitfune</span>
+                    </p>
+                    <p class="flex py-2 pl-3 text-lg blue-color font-Gilroy font-semibold"><svg class="mt-1 mr-1" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6.5" cy="6.5" r="6.5" fill="#2ECC71"/>
+                        <path d="M4 6L6 8L9 5" stroke="white"/>
+                        </svg>
+                         <span >€890</span>
+                    </p>
+                  </div>
+                  <br>
+                <div class="grid grid-cols-2 md:grid-cols-6 white-bg rounded mr-0 md:mr-3">
+                    <p class="pl-3  text-md blue-color font-Gilroy font-semibold py-2">Monteblanco</p>
+                    <p class="flex  pl-3 text-base blue-color font-Gilroy font-semibold py-2"><span class=" gray-text mt-1 mr-2" style="font-size: 10px;">Wo</span>12<span class="mt-1 mx-2 gray-text" style="font-size: 10px;">MAA</span> 
+                      
+                      <svg class="mt-2" width="16" height="5" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1" d="M0.5 0.5L15.5 0.5" stroke="#1C4071"/>
+                          </svg>
+                  
+                      <span class="mt-1 gray-text mx-1" style="font-size: 10px;">Do</span>13<span class="pl-1 gray-text mt-1 mx-2" style="font-size:10px;">MAA</span> 3 <span class="ml-1 gray-text mt-1" style="font-size: 10px; ">dagen</span></p>
+                   
+                   
+                   
+                    <p class="flex pl-3 justify-start md:justify-center text-base blue-color font-Gilroy font-semibold py-2">
+                        <svg class="mt-2 mr-1" width="14" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 4L3.5 6.5L9 1" stroke="#2ECC71" stroke-width="2"/>
+                            </svg>  
+                        Vrij Rijden</p>
+                    <p class="pl-3 text-sm blue-color font-Gilroy font-semibold py-2" >
+                        Originele uitlaat of dB-killer
+                    </p>
+                    <p class="pl-3 mx-1 md:mx-auto">
+                        <img src="./assets/pics/Rectangle 13.png" class="pr-2 " style="width: 109px; height: 19px;">    
+                        <span class="flex  pl-4  text-sm mt-1 blue-color font-Gilroy font-medium">Circuitfune</span>
+                    </p>
+                    <p class="flex py-2 pl-3 text-lg blue-color font-Gilroy font-semibold"><svg class="mt-1 mr-1" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6.5" cy="6.5" r="6.5" fill="#2ECC71"/>
+                        <path d="M4 6L6 8L9 5" stroke="white"/>
+                        </svg>
+                         <span >€890</span>
+                    </p>
+                  </div>
+                  <br>
+                <div class="grid grid-cols-2 md:grid-cols-6 white-bg rounded mr-0 md:mr-3">
+                  <p class="pl-3  text-md blue-color font-Gilroy font-semibold py-2">Monteblanco</p>
+                  <p class="flex  pl-3 text-base blue-color font-Gilroy font-semibold py-2"><span class=" gray-text mt-1 mr-2" style="font-size: 10px;">Wo</span>12<span class="mt-1 mx-2 gray-text" style="font-size: 10px;">MAA</span> 
+                    
+                    <svg class="mt-2" width="16" height="5" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" d="M0.5 0.5L15.5 0.5" stroke="#1C4071"/>
+                        </svg>
+                
+                    <span class="mt-1 gray-text mx-1" style="font-size: 10px;">Do</span>13<span class="pl-1 gray-text mt-1 mx-2" style="font-size:10px;">MAA</span> 3 <span class="ml-1 gray-text mt-1" style="font-size: 10px; ">dagen</span></p>
+                 
+                 
+                 
+                  <p class="flex pl-3 justify-start md:justify-center text-base blue-color font-Gilroy font-semibold py-2">
+                      <svg class="mt-2 mr-1" width="14" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 4L3.5 6.5L9 1" stroke="#2ECC71" stroke-width="2"/>
+                          </svg>  
+                      Vrij Rijden</p>
+                  <p class="pl-3 text-sm blue-color font-Gilroy font-semibold py-2" >
+                      Originele uitlaat of dB-killer
+                  </p>
+                  <p class="pl-3 mx-1 md:mx-auto">
+                      <img src="./assets/pics/race.png" class="pr-2 " style="width: 109px; height: 19px;">    
+                      <span class="flex  pl-4  text-sm mt-1 blue-color font-Gilroy font-medium">Circuitfune</span>
+                  </p>
+                  <p class="flex py-2 pl-3 text-lg blue-color font-Gilroy font-semibold"><svg class="mt-1 mr-1" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="6.5" cy="6.5" r="6.5" fill="#2ECC71"/>
+                      <path d="M4 6L6 8L9 5" stroke="white"/>
+                      </svg>
+                       <span >€890</span>
+                  </p>
+                </div>
+                <br>
+                <div class="grid grid-cols-2 md:grid-cols-6 white-bg rounded mr-0 md:mr-3">
+                  <p class="pl-3  text-md blue-color font-Gilroy font-semibold py-2">Monteblanco</p>
+                  <p class="flex  pl-3 text-base blue-color font-Gilroy font-semibold py-2"><span class=" gray-text mt-1 mr-2" style="font-size: 10px;">Wo</span>12<span class="mt-1 mx-2 gray-text" style="font-size: 10px;">MAA</span> 
+                    
+                    <svg class="mt-2" width="16" height="5" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" d="M0.5 0.5L15.5 0.5" stroke="#1C4071"/>
+                        </svg>
+                
+                    <span class="mt-1 gray-text mx-1" style="font-size: 10px;">Do</span>13<span class="pl-1 gray-text mt-1 mx-2" style="font-size:10px;">MAA</span> 3 <span class="ml-1 gray-text mt-1" style="font-size: 10px; ">dagen</span></p>
+                 
+                 
+                 
+                  <p class="flex pl-3 justify-start md:justify-center text-base blue-color font-Gilroy font-semibold py-2">
+                      <svg class="mt-2 mr-1" width="14" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 4L3.5 6.5L9 1" stroke="#2ECC71" stroke-width="2"/>
+                          </svg>  
+                      Vrij Rijden</p>
+                  <p class="pl-3 text-sm blue-color font-Gilroy font-semibold py-2" >
+                      Originele uitlaat of dB-killer
+                  </p>
+                  <p class="pl-3 mx-1 md:mx-auto">
+                      <img src="./assets/pics/race.png" class="pr-2 " style="width: 109px; height: 19px;">    
+                      <span class="flex  pl-4  text-sm mt-1 blue-color font-Gilroy font-medium">Circuitfune</span>
+                  </p>
+                  <p class="flex py-2 pl-3 text-lg blue-color font-Gilroy font-semibold"><svg class="mt-1 mr-1" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="6.5" cy="6.5" r="6.5" fill="#2ECC71"/>
+                      <path d="M4 6L6 8L9 5" stroke="white"/>
+                      </svg>
+                       <span >€890</span>
+                  </p>
+                </div>
+                  <br>
+                <div class="grid grid-cols-2 md:grid-cols-6 white-bg rounded mr-0 md:mr-3">
+                    <p class="pl-3  text-md blue-color font-Gilroy font-semibold py-2">Monteblanco</p>
+                    <p class="flex  pl-3 text-base blue-color font-Gilroy font-semibold py-2"><span class=" gray-text mt-1 mr-2" style="font-size: 10px;">Wo</span>12<span class="mt-1 mx-2 gray-text" style="font-size: 10px;">MAA</span> 
+                      
+                      <svg class="mt-2" width="16" height="5" viewBox="0 0 16 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.1" d="M0.5 0.5L15.5 0.5" stroke="#1C4071"/>
+                          </svg>
+                  
+                      <span class="mt-1 gray-text mx-1" style="font-size: 10px;">Do</span>13<span class="pl-1 gray-text mt-1 mx-2" style="font-size:10px;">MAA</span> 3 <span class="ml-1 gray-text mt-1" style="font-size: 10px; ">dagen</span></p>
+                   
+                   
+                   
+                    <p class="flex pl-3 justify-start md:justify-center text-base blue-color font-Gilroy font-semibold py-2">
+                        <svg class="mt-2 mr-1" width="14" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 4L3.5 6.5L9 1" stroke="#2ECC71" stroke-width="2"/>
+                            </svg>  
+                        Vrij Rijden</p>
+                    <p class="pl-3 text-sm blue-color font-Gilroy font-semibold py-2" >
+                        Originele uitlaat of dB-killer
+                    </p>
+                    <p class="pl-3 mx-1 md:mx-auto">
+                        <img src="./assets/pics/race.png" class="pr-2 " style="width: 109px; height: 19px;">    
+                        <span class="flex  pl-4  text-sm mt-1 blue-color font-Gilroy font-medium">Circuitfune</span>
+                    </p>
+                    <p class="flex py-2 pl-3 text-lg blue-color font-Gilroy font-semibold"><svg class="mt-1 mr-1" width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6.5" cy="6.5" r="6.5" fill="#2ECC71"/>
+                        <path d="M4 6L6 8L9 5" stroke="white"/>
+                        </svg>
+                         <span >€890</span>
+                    </p>
+                  </div>
+              </div>
+        </div>
+      </section>
+<!--js script  -->
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    </body>
+</html>
